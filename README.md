@@ -59,7 +59,7 @@ Usage:
       This is an optional parameter. If ommited, C crash will ignore.
 注意：如果需要编译C层崩溃，请将Android ndk目录下的ndk-stack命令加入PATH环境变量。
 
-报表文件说明（acrash-repor命令生成）
+报表文件说明（acrash-report命令生成）
 ---------------------------------------------------------------------------------
 ```
 XX_crash_report               报表目录
