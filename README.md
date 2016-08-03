@@ -59,6 +59,15 @@ Usage:
       This is an optional parameter. If ommited, C crash will ignore.
 注意：如果需要编译C层崩溃，请将Android ndk目录下的ndk-stack命令加入PATH环境变量。
 
+报表文件说明（acrash-repor命令生成）
+-----------------------------------------
+XX_crash_report							报表目录
+	c_report.txt 							C层崩溃报表，此报表中只列出每种崩溃中崩溃次数最多的两个崩溃。
+	c_detail_report.txt 			C层崩溃详细报表，此报表列出每种崩溃的所有崩溃。
+	java_report.txt java			java层崩溃报表，此报表中只列出每种崩溃中崩溃次数最多的两个崩溃。
+	java_detail_report.txt 		java层崩溃详细报表，此报表列出每种崩溃的所有崩溃。
+	invalid.txt								无效的崩溃日志，将会输出在此文件。
+
 崩溃日志格式
 -------------------------------------------------------
 	格式1: 每条崩溃占一行，行内使用\\n进行分隔。
