@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Collections;
 
 public class CrashParser {
 	/**
@@ -253,7 +254,7 @@ public class CrashParser {
 	 * 排序崩溃。
 	 */
 	private void sortCrash() {
-		mCrashGroups.sort(new Comparator<CrashGroup>() {
+		Collections.sort(mCrashGroups,new Comparator<CrashGroup>() {
 			@Override
 			public int compare(CrashGroup o1, CrashGroup o2) {
 				int o1Count = o1.getCrashCount();

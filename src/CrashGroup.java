@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Collections;
 
 /**
  * 此类表示一个崩溃组，代表一类崩溃。一个崩溃组里面的崩溃具有相同的崩溃关键字和崩溃类型。
@@ -111,7 +112,7 @@ public class CrashGroup {
 	 * 按照崩溃次数降序排列。
 	 */
 	public void sort() {
-		mCrashItems.sort(new Comparator<CrashItem>() {
+		Collections.sort(mCrashItems,new Comparator<CrashItem>() {
 			@Override
 			public int compare(CrashItem o1, CrashItem o2) {
 				return o2.getCrashCount() - o1.getCrashCount();
